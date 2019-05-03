@@ -1,14 +1,14 @@
 package com.company;
 
-public class Edicuational {
+public class Education extends ResumeDB {
     private String degree;
     private String major;
     private String univName;
     private int gradYear;
 
-    public Edicuational(){
+    public Education(){
     }
-    public Edicuational (String degree, String major, String univName, int gradYear){
+    public Education(String degree, String major, String univName, int gradYear){
         this.degree = degree;
         this.major = major;
         this.univName = univName;
@@ -38,5 +38,8 @@ public class Edicuational {
     }
     public int getGradYear(){
         return gradYear;
+    }
+    public String toString(){
+        return getDegree() + "in" + getMajor() + "\n" +getUnivName() + "," + getGradYear()+"\n";
     }
 }

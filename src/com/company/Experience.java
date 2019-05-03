@@ -1,6 +1,6 @@
 package com.company;
 
-public class Experience {
+public class Experience extends ResumeDB {
     // initialization of class
     private String company;
     private String jobTitle;
@@ -57,5 +57,10 @@ public class Experience {
 
     public void setJobDesc(String jobDesc) {
         this.jobDesc = jobDesc;
+    }
+
+    public String toString(){
+        return getJobTitle()+"\n"+getCompany()+
+                ", "+getStartDate()+"-"+getEndDate()+"\n"+ getJobDesc();
     }
 }

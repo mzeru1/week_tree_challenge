@@ -4,47 +4,69 @@ import java.util.ArrayList;
 
 public class ResumeDB {
 
-        ArrayList<Edicuational> educat_N = new ArrayList<>();
-        ArrayList<Experience> experien_C = new ArrayList<>();
-        ArrayList<Skill> skil_L = new ArrayList<>();
+    private ArrayList<Education> educat_L = new ArrayList<Education>();
+    private ArrayList<Experience> experien_L = new ArrayList<Experience>();
+    private ArrayList<Skill> skil_L = new ArrayList<Skill>();
+    private ArrayList<Name> name_L = new ArrayList<Name>();
 
-        public ResumeDB(){
+    public ResumeDB() {
 
     }
-//
 
 
-    public ResumeDB(ArrayList<Edicuational> educat_N, ArrayList<Experience> experien_C, ArrayList<Skill> skil_L) {
-        this.educat_N = educat_N;
-        this.experien_C = experien_C;
+    public ResumeDB(ArrayList<Name> name_L, ArrayList<Education> educat_L, ArrayList<Experience> experien_L, ArrayList<Skill> skil_L) {
+        this.name_L = name_L;
+        this.educat_L = educat_L;
+        this.experien_L = experien_L;
         this.skil_L = skil_L;
+
     }
 
-    ResumeDB mz = new ResumeDB();
-        Edicuational m = new ("bachlors", "cs", "umd", 2019);
 
+    Name mz = new Name("Meron", "meronomz@gamil.com");
+    //name_L.add(mz);
+    Education mz1 = new Education("masters", "CS", "umd", 2019);
+    Experience mz2 = new Experience("Electritian", "pepco", "May 3, 2018", " present", "team leader");
+    Skill mz3 = new Skill("java", "expert");
 
-    public ArrayList<Edicuational> getEducat_N() {
-        return educat_N;
+    public void addName(Name nm) {
+        name_L.add(nm);
     }
 
-    public void setEducat_N(ArrayList<Edicuational> educat_N) {
-        this.educat_N = educat_N;
+    public Name getName() {
+        return name_L.get(i);
     }
 
-    public ArrayList<Experience> getExperien_C() {
-        return experien_C;
+    public void addEmail(Name em) {
+        name_L.add(em);
     }
 
-    public void setExperien_C(ArrayList<Experience> experien_C) {
-        this.experien_C = experien_C;
+    public Name getEmai(int i) {
+        return name_L.get(i);
     }
 
-    public ArrayList<Skill> getSkil_L() {
-        return skil_L;
+    public void addEducation(Education ed) {
+        educat_L.add(ed);
     }
 
-    public void setSkil_L(ArrayList<Skill> skil_L) {
-        this.skil_L = skil_L;
+    public Education getEducaton(int i) {
+        return educat_L.get(i);
+
+    }
+
+    public void addExperi(Experience exp) {
+        experien_L.add(exp);
+    }
+
+    public Experience getExperi(int i) {
+        return experien_L.get(i);
+    }
+
+    public void addSkill(Skill sk) {
+        skil_L.add(sk);
+    }
+
+    public Skill getSkill(int i) {
+        return skil_L.get(i);
     }
 }

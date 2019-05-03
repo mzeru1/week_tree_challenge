@@ -1,6 +1,6 @@
 package com.company;
 
-public class Skill {
+public class Skill extends ResumeDB {
     private String skill;
     private  String comRate;
 
@@ -26,6 +26,11 @@ public class Skill {
 
     public void setComRate(String comRate) {
         this.comRate = comRate;
+    }
+
+    @Override
+    public String toString(){
+        return getSkill() + "," + getComRate();
     }
 }
 
