@@ -1,6 +1,4 @@
 package com.company;
-import java.security.PrivateKey;
-import java.util.ArrayList;
 import java.util.Scanner;
 public class Education  {
     private String degree;
@@ -10,7 +8,6 @@ public class Education  {
 
     public Education(){
     }
-
     Scanner scan = new Scanner(System.in);
     public Education(String degree, String major, String univName, int gradYear){
         this.degree = degree;
@@ -66,7 +63,6 @@ public class Education  {
     }
     @Override
     public String toString(){
-        for ()
-        return getDegree() + "in" + getMajor() + "\n" +getUnivName() + "," + getGradYear()+"\n";
+        return getDegree() + " in " + getMajor() + "\n" +getUnivName() + "," + getGradYear()+"\n";
     }
 }
