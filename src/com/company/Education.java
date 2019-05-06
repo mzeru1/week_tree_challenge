@@ -63,6 +63,6 @@ public class Education  {
     }
     @Override
     public String toString(){
-        return getDegree() + "in" + getMajor() + "\n" +getUnivName() + "," + getGradYear()+"\n";
+        return getDegree() + " in " + getMajor() + "\n" +getUnivName() + "," + getGradYear()+"\n";
     }
 }

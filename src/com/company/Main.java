@@ -8,15 +8,10 @@ import java.util.HashSet;
 import java.util.Scanner;
 
 public class Main {
-     String degree;
-     String major;
-     String univName;
-     int gradYear;
-
 
     public static void main(String[] args) {
-    /*    //HashMap<Integer, String> resumeMap = new HashMap<Integer, String>();
-        ArrayList<Person> pp = new ArrayList<Person>();
+        //HashMap<Integer, String> resumeMap = new HashMap<Integer, String>();
+        ArrayList<Person> pp = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
         Person person1 = null;
         Education education;
@@ -24,7 +19,7 @@ public class Main {
         // ResumeDB res = new ResumeDB();
         do{
             // ArrayList<ResumeDB> s = new ArrayList<ResumeDB>();
-            System.out.println("Do you want to build a resume? Enter y or N");
+            System.out.println("Do you want to build a resume? Enter y or N : ");
             buildResume = scan.nextLine();
 
 
@@ -32,11 +27,11 @@ public class Main {
             if (buildResume.equalsIgnoreCase("Y")) {
                 person1 = new Person();
 
-                System.out.println("enter name ");
+                System.out.print("enter name : ");
                 person1.setName(scan.nextLine());
-                System.out.println("enter email");
+                System.out.print("enter email : ");
                 person1.setEmail(scan.nextLine());
-                person1.toString();
+        //        person1.toString();
 
 
                 boolean addEducation = true;
@@ -44,17 +39,17 @@ public class Main {
                     education = new Education();
                     System.out.print("enter your Degree type : ");
                     education.setDegree(scan.nextLine());
-                    System.out.println("enter your major");
+                    System.out.print("enter your major : ");
                     education.setMajor(scan.nextLine());
-                    System.out.println("enter school name");
+                    System.out.print("enter school name : ");
                     education.setUnivName(scan.nextLine());
-                    System.out.println("enter graduation year");
+                    System.out.print("enter graduation year : ");
                     education.setGradYear(scan.nextInt());
                     scan.nextLine();
                     person1.addEducation(education);
-                    education.toString();
+                    /*education.toString();
                     person1.toString();
-
+*/
                     System.out.println("More education to add? Y or N ");
                     String choice = scan.nextLine();
                     if (!choice.equalsIgnoreCase("Y")) {
@@ -66,22 +61,21 @@ public class Main {
                     }
                 }
 
+
             } else {
                 System.out.println("Thank you see you next time !");
             }
             pp.add(person1);
+         /*   System.out.println(".......................................................");
+            System.out.println(" print checker \n " + person1.toString());*/
         } while (buildResume.equalsIgnoreCase("y"));
-        if(person1 != null){
+          if(person1 != null){
             for(Person i : pp) {
-                i.toString();
+                System.out.println(i.toString());
             }
-        }*/
-
-        System.out.println("fill the education form ed, dd,yega");
-        Education edu = new Education();
-        edu.educationInfo();
-
+        }
     }
 
 }
 
+// Bachelor's
