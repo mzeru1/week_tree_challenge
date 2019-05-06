@@ -34,15 +34,18 @@ public class Person {
     }
 
     public void setEmail(String email)  {
+
         this.email = email;
     }
 
     public String getEmail()
     {
+
         return email;
     }
 
     public void addEducation(Education ed) {
+
         educat_L.add(ed);
     }
 
@@ -52,18 +55,22 @@ public class Person {
     }
 
     public void addExperience(Experience exp) {
+
         experien_L.add(exp);
     }
 
     public ArrayList<Experience> getExperience() {
+
         return experien_L;
     }
 
     public void addSkill(Skill sk) {
+
         skil_L.add(sk);
     }
 
     public ArrayList<Skill> getSkill() {
+
         return skil_L;
     }
 

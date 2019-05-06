@@ -76,10 +76,22 @@ public class Main {
                 i.toString();
             }
         }*/
+        ArrayList<Person> pp = new ArrayList<Person>();
+        Scanner scan = new Scanner(System.in);
+        Person person1 = new Person();
+        System.out.println("enter name");
+        person1.setName(scan.nextLine());
+        System.out.println("enter your email");
+        person1.setEmail(scan.nextLine());
+        pp.add(person1);
+
+        //adding education now
 
         System.out.println("fill the education form ed, dd,yega");
         Education edu = new Education();
         edu.educationInfo();
+        person1.add(edu);
+        edu.toString();
 
     }
 
