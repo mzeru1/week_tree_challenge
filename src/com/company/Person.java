@@ -61,6 +61,7 @@ public class Person {
     }
 
     public void addExperience(Experience exp) {
+
         experien_L.add(exp);
     }
 
@@ -75,12 +76,20 @@ public class Person {
     public ArrayList<Skill> getSkill() {
         return skil_L;
     }
+
     @Override
     public String toString(){
         String ret =  this.name + "\n " + this.email + "\n\n" + "Education : ";
-        for(Education edc: educat_L){
+        for(Education edc: educat_L) {
             ret += edc.toString();
         }
+        for(Experience exp: experien_L) {
+            ret += exp.toString();
+        }
+        for(Skill skil: skil_L){
+            ret += skil.toString();
+        }
+
         return ret;
     }
 }
