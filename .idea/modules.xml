@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/week_tree_challenge-master.iml" filepath="$PROJECT_DIR$/week_tree_challenge-master.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/Resume.iml" filepath="$PROJECT_DIR$/Resume.iml" />
+>>>>>>> 5bafb0d06f16bce007ea2b30735922d23bf1d3b6
     </modules>
   </component>
 </project>
